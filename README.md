@@ -1,0 +1,2 @@
+# Ripple playground
+A [project](https://livecodes.io/?x=https://github.com/hatemhosny/ripple-playground-demo/tree/gh-pages/src) created by [Hatem Hosny](https://github.com/hatemhosny) on [LiveCodes](https://livecodes.io).
