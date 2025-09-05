@@ -1,0 +1,32 @@
+{
+  "title": "Ripple playground",
+  "description": "",
+  "head": "<meta charset=\"UTF-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+  "htmlAttrs": "lang=\"en\" class=\"\"",
+  "tags": [],
+  "activeEditor": "markup",
+  "markup": {
+    "language": "html",
+    "content": "<!doctype html>\r\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta charset=\"UTF-8\" />\r\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\t\t<title>Ripple playground</title>\r\n\t\t<style>\r\n\t\t\thtml,\r\n\t\t\tbody {\r\n\t\t\t\tmargin: 0;\r\n\t\t\t\tpadding: 0;\r\n        height: 100dvh;\r\n        overflow: hidden;\r\n\t\t\t}\r\n\t\t</style>\r\n\r\n\t\t<script type=\"module\">\r\n\t\t\timport { createPlayground } from 'https://cdn.jsdelivr.net/npm/livecodes@0.11.1';\r\n\r\n\t\t\tcreatePlayground('#container', {\r\n\t\t\t\tappUrl: 'https://ripple.livecodes.pages.dev',\r\n\t\t\t\tconfig: {\r\n\t\t\t\t\tcustomSettings: { ripple: { version: '0.2.19' } },\r\n\t\t\t\t\tactiveEditor: 'script',\r\n\t\t\t\t\tscript: {\r\n\t\t\t\t\t\tlanguage: 'ripple',\r\n\t\t\t\t\t\tcontent: `import type { Component } from \"ripple\"\r\n\r\nexport default component App() {\r\n  <div class=\"container\">\r\n    let $count = 0;\r\n\r\n    <button onClick={() => $count++}>{$count}</button>\r\n\r\n    if ($count > 1) {\r\n      <div>{'Greater than 1!'}</div>\r\n    }\r\n  </div>\r\n\r\n  <style>\r\n    button {\r\n      padding: 1rem;\r\n      font-size: 1rem;\r\n      cursor: pointer;\r\n    }\r\n  </style>\r\n}\r\n`,\r\n\t\t\t\t\t},\r\n\t\t\t\t\tmarkup: {\r\n\t\t\t\t\t\tlanguage: 'html',\r\n\t\t\t\t\t\thideTitle: true,\r\n\t\t\t\t\t},\r\n\t\t\t\t\tstyle: {\r\n\t\t\t\t\t\tlanguage: 'css',\r\n\t\t\t\t\t\thideTitle: true,\r\n\t\t\t\t\t\tcontent: `body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background: hsl(0, 0%, 18%); color: #fff }`,\r\n\t\t\t\t\t},\r\n\t\t\t\t},\r\n\t\t\t});\r\n\t\t</script>\r\n\t</head>\r\n\t<body>\r\n\t\t<div id=\"container\" data-default-styles=\"false\" data-height=\"100%\"></div>\r\n\t</body>\r\n</html>\r\n"
+  },
+  "style": {
+    "language": "css",
+    "content": ""
+  },
+  "script": {
+    "language": "javascript",
+    "content": ""
+  },
+  "stylesheets": [],
+  "scripts": [],
+  "cssPreset": "",
+  "processors": [],
+  "customSettings": {},
+  "imports": {},
+  "types": {},
+  "tests": {
+    "language": "typescript",
+    "content": ""
+  },
+  "version": "46"
+}
